@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #500000; /* Maroon color */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root { /* Assuming your root div has the id 'root' */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the .App div takes up at least the viewport height */
+  position: relative;
+}
+
+.Routes {
+  flex-grow: 1; /* This will allow the Routes container to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+.footer {
+  background-color: #500000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed; /* Changed from absolute to fixed */
+  bottom: 0;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  /* min-height: 100vh; */
+  position: relative;
+  padding-bottom: 50px; /* Footer height */
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.search-bar-container {
+  width: 720px; 
+  height: 40px; 
+  font-size: 16px; 
+  padding: 10px; 
+  border-radius: 20px; 
+
+} 
+
